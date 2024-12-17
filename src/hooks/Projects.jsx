@@ -44,7 +44,7 @@ function Social() {
           </button>{" "}
         </div>
       </div>
-      <div className="bg-gray-900 w-full  h-[35%]  rounded-2xl flex gap-2 flex-col relative p-3  transform transition-transform duration-300 hover:scale-105">
+      <div className="bg-gray-900 w-full  h-[35%] border  rounded-2xl flex gap-2 flex-col relative p-3  transform transition-transform duration-300 hover:scale-105">
         <img
           src={githubImg}
           alt="mail_svg"

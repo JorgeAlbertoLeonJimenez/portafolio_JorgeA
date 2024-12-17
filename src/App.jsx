@@ -26,7 +26,7 @@ function App() {
     }
   }
   return (
-    <div className="bgImage">
+    <div className="bgImage bg-slate-900 ">
       <div
         onMouseLeave={() => setImageAnimate(false)}
         onMouseEnter={() => setImageAnimate(true)}
