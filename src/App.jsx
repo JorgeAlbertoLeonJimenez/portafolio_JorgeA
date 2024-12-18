@@ -19,7 +19,7 @@ function App() {
         return <AboutMe />;
       case 3:
         return <Social />;
-        case 4:
+      case 4:
         return <Tools />;
       default:
         break;
@@ -30,12 +30,12 @@ function App() {
       <div
         onMouseLeave={() => setImageAnimate(false)}
         onMouseEnter={() => setImageAnimate(true)}
-        className=" transform transition-transform duration-300 hover:scale-105 w-80 h-80 relative bg-gray-700 bg-opacity-50 rounded-3xl shadow flex justify-center items-center flex-col"
+        className=" transform transition-transform duration-300 hover:scale-105 w-72 md:w-80  h-52 md:h-80 relative bg-gray-700 bg-opacity-50 rounded-3xl shadow flex justify-center items-center flex-col"
       >
         <div
           className={` ${
             imageAnimate ? " border-green-600" : ""
-          }  bg-yellow-500 h-40 w-40 rounded-3xl absolute top-[-70px]  z-20 left-[80px] border-[3px] transition-transform anima   `}
+          }  bg-yellow-500 h-20 w-20 md:h-32 md:w-32 rounded-3xl absolute top-[-40px] md:top-[-70px]  z-20  md:left-[90px] border-[3px] transition-transform anima   `}
         >
           <img
             src={faceImg}
@@ -44,9 +44,9 @@ function App() {
               imageAnimate ? "animate-bounce" : ""
             } `}
           />
-          <div className="w-6 h-6 absolute right-[-5px] top-[-5px] bg-green-700 rounded-full border-2 "></div>
+          <div className="w-4 md:w-6 h-4 md:h-6 absolute right-[-5px] top-[-5px] bg-green-700 rounded-full border-2 "></div>
         </div>
-        <h1 className="text-white font-bold  text-xl">Muhammad Aqsam</h1>
+        <h1 className="text-white font-bold  md:text-xl">Muhammad Aqsam</h1>
         <a
           href="mailto:jorgealbertolejim@gmail.com"
           className="text-sm text-gray-300"
@@ -55,32 +55,32 @@ function App() {
           @jorgealbertolejim
         </a>
         <div className="flex  flex-col gap-2  w-full px-10 mt-5">
-          <div className="flex gap-2 text-gray-400 text-sm">
+          <div className="flex gap-2 text-gray-400 text-[10px] md:text-sm">
             <img
-              className="w-3 "
+              className="w-3 md:w-5"
               src={locationImg}
               alt="location_svg"
             />{" "}
             Tijuana BC
           </div>{" "}
-          <div className="flex gap-2 text-gray-400 text-sm ">
+          <div className="flex gap-2 text-gray-400 text-[10px] md:text-sm ">
             <img
-              className="w-5 "
+              className="w-3 md:w-5"
               src={codeImg}
               alt="location_svg"
             />{" "}
             full stack | front and back
           </div>
-          <div className="flex gap-2 text-gray-500 text-sm ">
+          <div className="flex gap-2 text-gray-500 text-[10px] md:text-sm ">
             <img
               src={birthdayImg}
-              className="w-5"
+              className="w-3 md:w-5"
               alt="birthday_svg"
             />
             10 de Abril 1999
           </div>
         </div>
-        <div className="flex absolute bottom-5 text-white justify-around  w-full text-sm">
+        <div className="flex absolute bottom-5 text-white justify-around  w-full text-[10px] md:text-sm">
           <button
             className={`${
               option == 1

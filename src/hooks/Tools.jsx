@@ -15,12 +15,12 @@ import arrowDownImg from "../assets/arrow-down.svg";
 import jsImg from "../assets/js.svg";
 import { useState } from "react";
 function Tools() {
-    const [viewLibrary, setViewLibrary] = useState(false);
+  const [viewLibrary, setViewLibrary] = useState(false);
   return (
-    <div className="h-80 w-80 rounded-lg py-3  gap-3 flex flex-col">
+    <div className="h-80 w-80  rounded-lg py-3 text-white gap-3 flex flex-col">
       <div className="flex flex-col gap-2 font-medium">
-        <div className=" rounded-2xl  flex   gap-3 flex-row-reverse ">
-          <div className="flex text-gray-700 bg-white h-14 p-1 w-[60%] rounded-2xl items-center gap-3">
+        <div className=" rounded-2xl  flex   gap-3 flex-row-reverse h-9  md:h-14">
+          <div className="flex text-gray-700  bg-white  p-1 w-[60%] rounded-2xl items-center gap-3">
             <img
               src={reactImg}
               alt="react_image"
@@ -28,7 +28,7 @@ function Tools() {
             />
             <p>React</p>
           </div>
-          <div className="flex h-14  w-[45%] text-black bg-white rounded-2xl items-center gap-2 p-2">
+          <div className="flex  w-[45%] text-black bg-white rounded-2xl items-center gap-2 p-2">
             <img
               src={tailwindImg}
               alt="tailwind_image"
@@ -37,8 +37,8 @@ function Tools() {
             <p>Tailwind</p>
           </div>
         </div>
-        <div className=" rounded-2xl  flex   gap-3  ">
-          <div className="flex text-gray-700 bg-white h-14 p-1 w-[60%] rounded-2xl items-center gap-3">
+        <div className=" rounded-2xl  flex   gap-3 h-10 md:h-14 ">
+          <div className="flex text-gray-700 bg-white  p-1 w-[60%] rounded-2xl items-center gap-3">
             <img
               src={jsImg}
               alt="js_image"
@@ -46,7 +46,7 @@ function Tools() {
             />
             <p>JavaScript</p>
           </div>
-          <div className="flex h-14  w-[45%] bg-blue-500 rounded-2xl items-center gap-2 p-2">
+          <div className="flex   w-[45%] bg-blue-500 rounded-2xl items-center gap-2 p-2">
             <img
               src={mysqlImg}
               alt="js_image"
@@ -55,8 +55,8 @@ function Tools() {
             <p>Mysql</p>
           </div>
         </div>
-        <div className=" rounded-2xl flex   gap-3  flex-row-reverse ">
-          <div className="flex  bg-blue-800 h-14 p-1 w-[60%] rounded-2xl items-center gap-3">
+        <div className=" rounded-2xl flex   gap-3 h-10 md:h-14 flex-row-reverse ">
+          <div className="flex  bg-blue-800  p-1 w-[60%] rounded-2xl items-center gap-3">
             <img
               src={cssImg}
               alt="css_image"
@@ -64,7 +64,7 @@ function Tools() {
             />
             <p>Css</p>
           </div>
-          <div className="flex h-14 items-center w-[45%] bg-orange-500 rounded-2xl gap-2 p-1">
+          <div className="flex  items-center w-[45%] bg-orange-500 rounded-2xl gap-2 p-1">
             <img
               src={htmlImg}
               alt="htmlImg_image"
@@ -73,9 +73,9 @@ function Tools() {
             <p>Html</p>
           </div>
         </div>
-        <div className=" rounded-2xl flex   gap-3 relative ">
+        <div className=" rounded-2xl flex h-10 md:h-14  gap-3 relative ">
           <div
-            className={`flex h-14 items-center w-full  ${
+            className={`flex  items-center w-full  ${
               viewLibrary ? "" : "animate-bounce"
             } cursor-pointer bg-green-700 rounded-2xl gap-2 pl-4 relative  transform transition-transform duration-300 hover:scale-105 `}
             onClick={() => setViewLibrary(!viewLibrary)}
@@ -96,26 +96,26 @@ function Tools() {
           </div>
 
           {viewLibrary && (
-            <div className="flex gap-3 flex-col md:absolute  right-[-320px] top-[-70px] w-[300px] ">
-              <div className=" flex gap-3">
-                <div className=" bg-white flex h-14 p-3 w-[60%] rounded-2xl items-center gap-3">
+            <div className="flex gap-3 flex-col absolute  right-[-320px] top-[-70px] w-[300px] ">
+              <div className=" flex gap-3 h-10 md:h-14">
+                <div className=" bg-white flex  p-3 w-[60%] rounded-2xl items-center gap-3">
                   <img
                     src={expressImg}
                     alt="express_image"
                     className="w-14"
                   />
                 </div>
-                <div className=" flex  bg-black h-14 p-3 w-[40%] border rounded-2xl items-center gap-3">
+                <div className=" flex  bg-black  p-3 w-[40%] border rounded-2xl items-center gap-3">
                   <img
                     src={jwtImg}
                     alt="express_image"
                     className="w-10"
                   />
-                  <p className="font-thin md:flex hidden">JWT</p>
+                  <p className="font-thin  ">JWT</p>
                 </div>
               </div>
-              <div className=" flex gap-3 flex-row-reverse">
-                <div className=" bg-white text-gray-700 font-thin flex h-14 p-3 w-[60%] rounded-2xl justify-center md:justify-start items-center gap-3">
+              <div className=" flex gap-3 flex-row-reverse h-10 md:h-14">
+                <div className=" bg-white text-gray-700 font-thin flex p-3 w-[60%] rounded-2xl justify-center md:justify-start items-center gap-3">
                   <img
                     src={mysqlIconImg}
                     alt="mysql_image"
@@ -123,14 +123,14 @@ function Tools() {
                   />
                   <p className="hidden md:flex">Myql2</p>
                 </div>
-                <div className=" flex  bg-black h-14 md:p-3 p-1 w-[40%] border rounded-2xl items-center gap-3">
+                <div className=" flex  bg-black  md:p-3 p-1 w-[40%] border rounded-2xl items-center gap-3">
                   <p className="font-thin md:text-[12px] text-[10px]">
                     MULTRER
                   </p>
                 </div>
               </div>
-              <div className=" flex gap-3 ">
-                <div className=" bg-white text-gray-700 font-thin flex h-14 p-3 w-full rounded-2xl items-center gap-3">
+              <div className=" flex gap-3 h-10 md:h-14">
+                <div className=" bg-white text-gray-700 font-thin flex  p-3 w-full rounded-2xl items-center gap-3">
                   <img
                     src={keyImg}
                     alt="mysql_image"
@@ -143,8 +143,8 @@ function Tools() {
           )}
         </div>
 
-        <div className=" rounded-2xl flex   gap-3  ">
-          <div className="flex  bg-white text-black h-14 p-1 w-[60%] rounded-2xl items-center gap-3">
+        <div className=" rounded-2xl flex   gap-3  h-10 md:h-14">
+          <div className="flex  bg-white text-black  p-1 w-[60%] rounded-2xl items-center gap-3">
             <img
               src={gitImg}
               alt="git_image"
@@ -152,7 +152,7 @@ function Tools() {
             />
             <p>Git</p>
           </div>
-          <div className="flex h-14 items-center w-[45%] bg-black border rounded-2xl gap-2 p-1">
+          <div className="flex  items-center w-[45%] bg-black border rounded-2xl gap-2 p-1">
             <img
               src={githubImg}
               alt="github_image"
@@ -161,8 +161,8 @@ function Tools() {
             <p>Github</p>
           </div>
         </div>
-        <div className=" rounded-2xl flex   gap-3  ">
-          <div className="flex  bg-white text-black h-14 p-1 w-full rounded-2xl items-center gap-3">
+        <div className=" rounded-2xl flex h-10 md:h-14  gap-3  ">
+          <div className="flex  bg-white text-black  p-1 w-full rounded-2xl items-center gap-3">
             <img
               src={figmaImg}
               alt="figma_image"

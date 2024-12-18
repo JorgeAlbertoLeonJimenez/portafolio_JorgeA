@@ -11,7 +11,7 @@ function AboutMe() {
       case 1:
         return (
           <>
-            <p className="bg-blue-700 p-2 rounded-2xl text-sm   ">
+            <p className="bg-blue-700 p-2 rounded-2xl text-[10px] md:text-sm   ">
               {" "}
               Soy un apasionado de la{" "}
               <strong>tecnología y la programación</strong>, dos campos que
@@ -23,7 +23,7 @@ function AboutMe() {
               software
             </p>
             <div className="w-full h-full flex gap-3">
-              <div className="w-[100%]  gap-3 flex flex-col overflow-auto  rounded-2xl text-sm p-2 transform transition-transform duration-300 hover:scale-105 ">
+              <div className="w-[100%]  gap-3 flex flex-col overflow-auto  rounded-2xl text-[10px] md:text-sm p-2 transform transition-transform duration-300 hover:scale-105 ">
                 <div className="bg-gray-500 p-2 rounded-xl">
                   <strong> Diseño de Landíng Pages (html/css/js) </strong>
                   <br /> Diseño Elaboración del código Responsividad ( celulares
